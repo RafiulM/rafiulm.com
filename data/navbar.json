@@ -1,0 +1,14 @@
+[
+    {
+        "menu" : "EXPERIENCE",
+        "link" : "#experience"
+    },
+    {
+        "menu" : "PROJECTS",
+        "link" : "#projects"
+    },
+    {
+        "menu" : "SKILL",
+        "link" : "#skill"
+    }
+]

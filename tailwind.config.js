@@ -7,9 +7,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'lexend':['Lexend Deca', 'sans-serif'],
-      }
+        'archivo':['Archivo', 'sans-serif'],
+        'display':['Dela Gothic One','cursive'],
+      },
+      colors: {
+      'primary': '#FF5400'
+    }
     },
+    
   },
-  plugins: [],
+  plugins: [],  
 }

@@ -1,14 +1,17 @@
 [
-    {
-        "menu" : "EXPERIENCE",
-        "link" : "#experience"
-    },
-    {
-        "menu" : "PROJECTS",
-        "link" : "#projects"
-    },
-    {
-        "menu" : "SKILL",
-        "link" : "#skill"
-    }
+  {
+    "id": 1,
+    "menu": "EXPERIENCE",
+    "link": "#experience"
+  },
+  {
+    "id": 2,
+    "menu": "PROJECTS",
+    "link": "#projects"
+  },
+  {
+    "id": 3,
+    "menu": "SKILL",
+    "link": "#skill"
+  }
 ]

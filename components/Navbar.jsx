@@ -12,7 +12,7 @@ function Navbar() {
         <ul className="hidden list-none h-full justify-center items-center font-normal">
           {NavData.map((navlink) => {
             return (
-              <a href={navlink.link}>
+              <a key={navlink.id} href={navlink.link}>
                 <li className="px-4 font-">{navlink.menu}</li>
               </a>
             );

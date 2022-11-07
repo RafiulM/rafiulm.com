@@ -9,7 +9,7 @@ export function Marquee() {
       <div className="flex flex-shrink-0 gap-6 overflow-auto py-8 animate-marquee">
         {SkillsData.map((data) => {
           return (
-            <div>
+            <div key={data.id}>
               <div className="flex flex-col w-32 h-32 items-center justify-center gap-4  py-2 ">
                 <Image src={data.logo} alt={data.alt} width={72} height={72} />
                 <div className="flex flex-col w-full gap-1 item-center justify-center text-center">
@@ -29,7 +29,7 @@ export function Marquee() {
       >
         {SkillsData.map((data) => {
           return (
-            <div>
+            <div key={data.id}>
               <div className="flex flex-col w-32 h-32 items-center justify-center gap-4  py-2 ">
                 <Image src={data.logo} alt={data.alt} width={72} height={72} />
                 <div className="flex flex-col w-full gap-1 item-center justify-center text-center">

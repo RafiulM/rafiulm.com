@@ -15,7 +15,7 @@ module.exports = {
         'primary': '#FF5400'
       },
       animation: {
-        marquee: 'marquee 25s linear infinite',
+        marquee: 'marquee 22s linear infinite',
       },
       keyframes: {
         marquee: {

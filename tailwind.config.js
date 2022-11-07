@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -7,14 +8,41 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'archivo':['Archivo', 'sans-serif'],
-        'display':['Dela Gothic One','cursive'],
+        'archivo': ['Archivo', 'sans-serif'],
+        'display': ['Dela Gothic One', 'cursive'],
       },
       colors: {
-      'primary': '#FF5400'
-    }
+        'primary': '#FF5400'
+      },
+      animation: {
+        marquee: 'marquee 25s linear infinite',
+      },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-100%)' },
+        }
+      }
     },
-    
+
   },
-  plugins: [],  
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.scrollbar-hide': {
+          /* IE and Edge */
+          '-ms-overflow-style': 'none',
+
+          /* Firefox */
+          'scrollbar-width': 'none',
+
+          /* Safari and Chrome */
+          '&::-webkit-scrollbar': {
+            display: 'none'
+          }
+        }
+      }
+      )
+    })
+  ],
 }

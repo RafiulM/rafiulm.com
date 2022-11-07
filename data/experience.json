@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "link":"#",
+    "year": "2021-2022",
+    "company": "PT Ceria Nugraha Indotama",
+    "title": "Web Developer and Designer",
+    "tags": [
+      "Web Development",
+      "UI/UX Design",
+      "IT Project Management",
+      "Graphic Design"
+    ]
+  },
+  {
+    "id": 2,
+    "link":"#",
+    "year": "2021-2022",
+    "company": "PT Ceria Nugraha Indotama",
+    "title": "Web Developer and Designer",
+    "tags": [
+      "Web Development",
+      "UI/UX Design",
+      "IT Project Management",
+      "Graphic Design"
+    ]
+  }
+]

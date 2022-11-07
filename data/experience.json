@@ -23,8 +23,30 @@
     "title": "Graphic Design Intern",
     "jobdesc": [
       "Designed the company logo",
-"Created social media posts",
-"UI/UX and logo design for a client"
+      "Created social media posts",
+      "UI/UX and logo design for a client"
+    ]
+  },
+  {
+    "id": 3,
+    "link": "#",
+    "year": "2020",
+    "company": "PT Dioti Solusi Teknologi",
+    "title": "UI/UX Designer",
+    "jobdesc": [
+      "Conduct UX research and designed the UI prototype for a mobile-based SuperApp project owned by Astra Digital, part of PT Astra International TBK"
+    ]
+  },
+  {
+    "id": 4,
+    "link": "#",
+    "year": "2020",
+    "company": "Universitas Indonesia",
+    "title": "Public Relation Ambassador",
+    "jobdesc": [
+        "Represent University of Indonesia (UI) in expos",
+        "Co-hosted an Instagram Live broadcast viewed by thousands of people. Promoting courses and explaining the admission process in UI",
+        "Created social media posters"
     ]
   }
 ]

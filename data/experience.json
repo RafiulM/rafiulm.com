@@ -1,28 +1,30 @@
 [
   {
     "id": 1,
-    "link":"#",
+    "link": "#",
     "year": "2021-2022",
     "company": "PT Ceria Nugraha Indotama",
     "title": "Web Developer and Designer",
-    "tags": [
-      "Web Development",
-      "UI/UX Design",
-      "IT Project Management",
-      "Graphic Design"
+    "jobdesc": [
+      "Project Manager for a Mining Equipment Simulator Project",
+      "        Created the company's Brand Guideline",
+      "Lead the graphic design team",
+      "Responsible for the design of the company's presentation deck",
+      "Maintain and manage changes to the frontend of the company's website",
+      "Maintain stored data and Virtual Private Server (VPS) hosted on Amazon Web Services (AWS)",
+      "UI/UX Designs and project documentation for IT systems"
     ]
   },
   {
     "id": 2,
-    "link":"#",
-    "year": "2021-2022",
-    "company": "PT Ceria Nugraha Indotama",
-    "title": "Web Developer and Designer",
-    "tags": [
-      "Web Development",
-      "UI/UX Design",
-      "IT Project Management",
-      "Graphic Design"
+    "link": "#",
+    "year": "2020",
+    "company": "PT Newtab Inovasi Indonesia",
+    "title": "Graphic Design Intern",
+    "jobdesc": [
+      "Designed the company logo",
+"Created social media posts",
+"UI/UX and logo design for a client"
     ]
   }
 ]

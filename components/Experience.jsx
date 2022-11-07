@@ -5,15 +5,14 @@ import ExperienceData from "../data/experience.json";
 import Link from "next/link";
 
 function Experience() {
-  
   return (
     <Layout>
       <h2 className="font-bold text-2xl mb-4">EXPERIENCE</h2>
-      <div className="flex flex-col gap-4">
+      <div className="flex overflow-x-scroll gap-4 scrollbar-hide">
         {ExperienceData.map((data) => {
           return (
             <Link key={data.id} href={data.link}>
-              <div className="flex rounded-lg bg-white shadow-lg  flex-col px-4 py-6 border-solid border-2">
+              <div className="flex flex-shrink-0 rounded-lg bg-white shadow-lg w-[320px] flex-col px-4 py-6">
                 <div className="flex flex-col">
                   <span className="italic font-[300] text-sm">{data.year}</span>
                   <span className="flex flex-col w-full font-bold text-lg">
@@ -24,7 +23,14 @@ function Experience() {
                   </span>
                 </div>
 
-                
+                <span className="mt-4 font-semibold text-sm">Responsibilities</span>
+
+                <ul className="mt-1 text-xs font-[300] list-disc list-outside ml-4">
+                  {data.jobdesc.map((jobdesc) => {
+                    return <li>{jobdesc}</li>;
+                  })}
+                </ul>
+
                 {/* <ul
                   key={data.tags.indexOf()}
                   className="grid grid-rows-2 grid-cols-2 gap-2  mt-8"

@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function Marquee() {
   return (
-    <div className="flex overflow-x-hidden gap-6 scrollbar-hide">
+    <div className="flex overflow-x-hidden gap-6">
       <div className="flex flex-shrink-0 gap-6 overflow-auto py-8 animate-marquee">
         {SkillsData.map((data) => {
           return (

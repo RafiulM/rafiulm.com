@@ -11,6 +11,7 @@ function Footer() {
         <a
           href="https://github.com/RafiulM/rafiulm-web"
           target="_blank"
+          rel="noreferrer"
           className="group flex gap-1"
         >
           <AiFillGithub className="text-white group-hover:text-primary" />

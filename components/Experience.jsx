@@ -26,8 +26,8 @@ function Experience() {
                 <span className="mt-4 font-semibold text-sm">Responsibilities</span>
 
                 <ul className="mt-1 text-xs font-[300] list-disc list-outside ml-4">
-                  {data.jobdesc.map((jobdesc) => {
-                    return <li>{jobdesc}</li>;
+                  {data.jobdesc.map((jobdesc,index) => {
+                    return <li key={index}>{jobdesc}</li>;
                   })}
                 </ul>
 

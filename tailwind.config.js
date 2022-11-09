@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 const plugin = require('tailwindcss/plugin')
 module.exports = {
+  darkMode: 'class',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-  theme: {
+  theme:
+  {
     extend: {
+      fontWeight: {
+        normal: 300,
+      },
       fontFamily: {
         'archivo': ['Archivo', 'sans-serif'],
         'display': ['Dela Gothic One', 'cursive'],

@@ -3,26 +3,28 @@ import Experience from '../components/Experience'
 import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
+import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 
 export default function Home() {
   return (
-    <div className='font-archivo'>
+    <div className='font-archivo font-normal bg-white dark:bg-black dark:text-white'>
       <Head>
         <title>Rafiul M</title>
         <meta name="description" content="My personal website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Navbar />
+      <Navbar />
+      <main className='pt-20 flex flex-col items-center justify-center w-full'>
         <Hero />
-        <Skills/>
-        <Experience/>
+        <Skills />
+        <Experience />
+        <Projects />
       </main>
 
       <footer>
-        <Footer/>
+        <Footer />
       </footer>
     </div>
   )

@@ -8,17 +8,17 @@ function Experience() {
   return (
     <Layout>
       <h2 className="font-bold text-2xl mb-4">EXPERIENCE</h2>
-      <div className="flex overflow-scroll gap-4 scrollbar-hide px-4 py-2">
+      <div className="flex overflow-scroll gap-4 scrollbar-hide px-4 py-4">
         {ExperienceData.map((data) => {
           return (
             <Link key={data.id} href={data.link}>
               <div className="flex flex-shrink-0 rounded-lg bg-white shadow-lg w-[320px] flex-col px-4 py-6">
                 <div className="flex flex-col">
-                  <span className="italic font-[300] text-sm">{data.year}</span>
+                  <span className="italic text-sm">{data.year}</span>
                   <span className="flex flex-col w-full font-bold text-lg">
                     {data.company}
                   </span>
-                  <span className="flex flex-col w-full text-sm font-[300]">
+                  <span className="flex flex-col w-full text-sm">
                     {data.title}
                   </span>
                 </div>
@@ -27,7 +27,7 @@ function Experience() {
                   Responsibilities
                 </span>
 
-                <ul className="mt-1 text-xs font-[300] list-disc list-outside ml-4">
+                <ul className="mt-1 text-xs list-disc list-outside ml-4">
                   {data.jobdesc.map((jobdesc, index) => {
                     return <li key={index}>{jobdesc}</li>;
                   })}

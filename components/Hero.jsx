@@ -32,15 +32,39 @@ function Hero() {
         <ButtonRound link="#projects">My Work</ButtonRound>
         <ButtonRoundOutline link="#resume">Resume</ButtonRoundOutline>
       </div>
-      <div className="flex items-center justify-center gap-6 my-2">
-        <a>
-          <AiFillLinkedin className="text-gray-500" size={24} />
+      <div className="flex items-center justify-center gap-6 my-4">
+        <a
+          href="https://www.linkedin.com/in/rafiulm/"
+          target="_blank"
+          rel="noreferrer"
+          title="My LinkedIn Profile"
+          className="cursor-pointer"
+        >
+          <AiFillLinkedin
+            className="text-gray-300 hover:text-black"
+            size={24}
+          />
         </a>
-        <a>
-          <AiFillGithub className="text-gray-500" size={24} />
+        <a
+          href="https://github.com/RafiulM"
+          target="_blank"
+          rel="noreferrer"
+          title="My Code Repositories"
+          className="cursor-pointer"
+        >
+          <AiFillGithub className="text-gray-300 hover:text-black" size={24} />
         </a>
-        <a>
-          <AiOutlineDribbble className="text-gray-500" size={24} />
+        <a
+          href="https://dribbble.com/Rafiul_M/collections"
+          target="_blank"
+          rel="noreferrer"
+          title="My Designs"
+          className="cursor-pointer"
+        >
+          <AiOutlineDribbble
+            className="text-gray-300 hover:text-black"
+            size={24}
+          />
         </a>
       </div>
     </Layout>

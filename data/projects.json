@@ -1,7 +1,35 @@
-[{
-    "id":1,
-    "name":"Ceria Website Revamp",
-    "description":"",
-    "buttontext":"Visit Website",
-    "code":"View Code"
-}]
+[
+  {
+    "id": 1,
+    "image": "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+    "name": "Ceria Website Revamp",
+    "tags": ["React JS", "Styled-Components", "Figma", "Git", "Strapi"],
+    "description": "Make changes to the website to create a deliver a website that reflects a world-class company",
+    "buttontext": "Visit Website",
+    "code": "View Code",
+    "primary_link": "#",
+    "private_project": false
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+    "name": "Heavy Mining Equipment Simulator",
+    "tags": ["IT Project Management", "Budgeting", "Communication"],
+    "description": "this project blabla",
+    "buttontext": "Visit Website",
+    "code": "View Code",
+    "primary_link": "",
+    "private_project": true
+  },
+  {
+    "id": 2,
+    "image": "https://images.unsplash.com/photo-1661961112951-f2bfd1f253ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80",
+    "name": "Personal Website",
+    "tags": ["Next JS", "Tailwind CSS", "Vercel", "Figma"],
+    "description": "this project blabla",
+    "buttontext": "Visit Website",
+    "code": "View Code",
+    "primary_link": "https://www.rafiulm.com",
+    "private_project": false
+  }
+]

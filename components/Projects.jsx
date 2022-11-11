@@ -8,19 +8,19 @@ import { AiFillLock } from "react-icons/ai";
 function Projects() {
   return (
     <Layout>
-      <h2 className="font-bold text-2xl mb-4">PROJECTS</h2>
-      <div className="grid grid-cols-2 gap-4">
+      <h2 className="font-bold text-2xl mb-4 text-center">MY WORK</h2>
+      <div className="flex flex-col items-center gap-4">
         {Project.map((data) => {
           return (
             <div
               key={data.id}
-              className="flex justify-start flex-col h-full bg-white outline outline-2 outline-gray-200 rounded-md overflow-hidden"
+              className="flex justify-start max-w-sm flex-col h-full bg-white outline outline-2 outline-gray-200 rounded-sm overflow-hidden"
             >
               <div className="flex flex-shrink-0 object-cover">
                 <Image
                   src={data.image}
                   height={180}
-                  width={320}
+                  width={384}
                   className="bg-gray-500 h-3/4 w-full object-cover"
                 ></Image>
               </div>
@@ -38,18 +38,18 @@ function Projects() {
                       );
                     })}
                   </div>
-                  <div className="flex flex-col justify-center my-3">
-                    <h3 className="font-bold leading-4">{data.name}</h3>
-                  </div>
-                  <p className="mt-2 text-xs">{data.description}</p>
+                  <h3 className="text-lg font-bold leading-4 mt-6">
+                    {data.name}
+                  </h3>
+                  <p className="mt-2 text-sm">{data.description}</p>
                 </div>
-                <div className="flex gap-1 w-full">
+                <div className="flex gap-1 w-full mt-4">
                   <ButtonSquare link={data.primary_link}>
                     {data.private_project ? (
-                     <div className="flex justify-center items-center gap-1">
-                     <AiFillLock />
-                     Private Project
-                   </div>
+                      <div className="flex justify-center items-center gap-1">
+                        <AiFillLock />
+                        Private Project
+                      </div>
                     ) : (
                       data.buttontext
                     )}

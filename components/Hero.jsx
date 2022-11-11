@@ -10,10 +10,10 @@ function Hero() {
   return (
     <Layout>
       <div className="flex flex-col item-center justify-center mb-2">
-        <h1 className="flex w-full justify-center items-center text-center text-[68px] leading-none font-display hover:text-primary">
+        <h1 className="flex w-full justify-center items-center text-center text-[72px] leading-none font-display bg-hero-text bg-clip-text bg-center text-black/10 hover:invert cursor-default">
           RAFIUL
         </h1>
-        <ul className="flex items-center justify-center text-sm gap-1 list-inside list-disc ">
+        <ul className="flex items-center justify-center text-sm gap-3 list-inside list-disc ">
           <li className="first:list-none">UI/UX Design</li>
           <li>Web Development</li>
           <li>Graphic Design</li>

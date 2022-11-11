@@ -27,6 +27,9 @@ module.exports = {
           '0%': { transform: 'translateX(0%)' },
           '100%': { transform: 'translateX(-100%)' },
         }
+      },
+      backgroundImage: {
+        'hero-text': "url('https://64.media.tumblr.com/243bebb6f10aeb9028585f2262a22756/a277055a29fb87ba-0e/s540x810/895d339aef32c01bc15980b755f88b6845bd385d.gifv')",
       }
     },
 

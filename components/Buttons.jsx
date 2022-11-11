@@ -22,7 +22,7 @@ export function ButtonRoundOutline({ children, link }) {
 export function ButtonSquare({ children, link }) {
   return (
     <a href={link} target="_blank" rel="noreferrer" className="flex w-full">
-      <button className="text-xs w-full px-10 py-2 border border-primary text-primary hover:bg-primary ease-in-out duration-300 hover:text-white font-normal rounded-md ">
+      <button className="text-sm w-full px-10 py-2 border border-primary text-primary hover:bg-primary ease-in-out duration-300 hover:text-white font-normal rounded-md ">
         {children}
       </button>
     </a>

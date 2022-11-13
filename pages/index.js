@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <div className='font-archivo font-normal bg-white dark:bg-black dark:text-white'>
       <Head>
-        <title>Rafiul M</title>
-        <meta name="description" content="My personal website" />
+        <title>Ahmad Rafiul Mahdi</title>
+        <meta name="description" content="Ahmad Rafiul Mahdi - Web Developer, UI/UX Designer, Graphic Designer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

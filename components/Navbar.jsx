@@ -11,7 +11,7 @@ function Navbar() {
     setOpen(!open);
   };
   return (
-    <nav className="fixed w-full bg-white/60 dark:bg-black/60 z-10 backdrop-blur-md ">
+    <nav className="fixed w-full bg-white/60 dark:bg-black/60 backdrop-blur-md z-50">
       <div className="flex w-full h-20 justify-center items-center px-4">
         <div className="flex w-full max-w-7xl justify-between h-full items-center font-archivo font-n">
           <div className="flex justify-center items-center h-full">

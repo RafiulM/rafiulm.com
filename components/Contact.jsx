@@ -15,7 +15,7 @@ function Contact() {
             height={400}
             objectFit="cover"
             alt="Ahmad Rafiul Mahdi"
-loading="lazy"
+            loading="lazy"
             className="hover:scale-105 duration-500 ease-in-out"
           ></Image>
         </div>
@@ -25,6 +25,8 @@ loading="lazy"
             <a
               href="mailto: ahmadrafiulm@gmail.com"
               title="ahmadrafiulm@gmail.com"
+              target="_blank"
+              rel="noreferrer"
               className="font-bold text-primary"
             >
               Email
@@ -33,6 +35,8 @@ loading="lazy"
             <a
               href="https://www.linkedin.com/in/rafiulm/"
               title="LinkedIn : rafiulm"
+              target="_blank"
+              rel="noreferrer"
               className="font-bold text-primary"
             >
               LinkedIn

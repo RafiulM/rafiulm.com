@@ -6,7 +6,7 @@ import Link from "next/link";
 
 function Experience() {
   return (
-    <Layout>
+    <Layout section="experience">
       <h2 className="font-bold text-2xl mb-4">EXPERIENCE</h2>
       <div className="flex overflow-x-scroll md:overflow-visible scrollbar-hide gap-4  px-4 md:px-0 py-4">
         {ExperienceData.map((data) => {

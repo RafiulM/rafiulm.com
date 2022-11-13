@@ -8,9 +8,9 @@ export function LayoutOverflow({children}){
   )
 }
 
-function Layout({children}) {
+function Layout({section,children}) {
   return (
-    <div className="flex flex-col max-w-7xl w-full px-4 py-6 mx-auto overflow-hidden">
+    <div className="flex flex-col max-w-7xl w-full px-4 py-6 mx-auto overflow-hidden" id={section}>
       {children}
     </div>
   );

@@ -4,6 +4,7 @@ import {
   AiFillGithub,
   AiOutlineDribbble,
 } from "react-icons/ai";
+import {MdOutlineEmail} from "react-icons/md"
 import Layout from "./Layout";
 
 function Hero() {
@@ -36,7 +37,7 @@ function Hero() {
           <ButtonRound link="#projects">My Work</ButtonRound>
           <ButtonRoundOutline link="#resume">Resume</ButtonRoundOutline>
         </div>
-        <div className="flex items-center justify-center gap-6 my-4 ">
+        <div className="flex items-center justify-center gap-6 my-4 text-zinc-300 dark:text-white ">
           <a
             href="https://www.linkedin.com/in/rafiulm/"
             target="_blank"
@@ -45,7 +46,7 @@ function Hero() {
             className="cursor-pointer"
           >
             <AiFillLinkedin
-              className="text-gray-300 hover:text-blue-800 duration-500 ease-in-out"
+              className="text-inherit hover:text-blue-800 duration-500 ease-in-out"
               size={24}
             />
           </a>
@@ -57,7 +58,7 @@ function Hero() {
             className="cursor-pointer"
           >
             <AiFillGithub
-              className="text-gray-300 hover:text-black duration-500 ease-in-out"
+              className="text-inherit hover:text-black dark:hover:text-zinc-500 duration-500 ease-in-out"
               size={24}
             />
           </a>
@@ -69,7 +70,19 @@ function Hero() {
             className="cursor-pointer"
           >
             <AiOutlineDribbble
-              className="text-gray-300 hover:text-pink-600 duration-500 ease-in-out"
+              className="text-inherit hover:text-pink-600 duration-500 ease-in-out"
+              size={24}
+            />
+          </a>
+          <a
+            href="mailto: ahmadrafiulm@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            title="Send me and email"
+            className="cursor-pointer"
+          >
+            <MdOutlineEmail
+              className="text-inherit hover:text-red-700 duration-500 ease-in-out"
               size={24}
             />
           </a>

@@ -30,6 +30,10 @@ module.exports = {
       },
       backgroundImage: {
         'hero-text': "url('https://64.media.tumblr.com/243bebb6f10aeb9028585f2262a22756/a277055a29fb87ba-0e/s540x810/895d339aef32c01bc15980b755f88b6845bd385d.gifv')",
+      },
+      boxShadow: {
+        'start': 'inset 0 0 0 0 #FF5400',
+        'end': 'inset 180px 0 0 0 #FF5400'
       }
     },
 

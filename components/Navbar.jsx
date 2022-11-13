@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import NavData from "../data/navbar.json";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import Link from "next/link";
+import {Link} from "react-scroll";
 import { ThemeChanger } from "./Theme";
 
 function Navbar() {
@@ -25,7 +25,15 @@ function Navbar() {
                     key={navlink.id}
                     className="flex items-center cursor-pointer h-full px-4"
                   >
-                    <Link href={navlink.link} className="h-full ">
+                    <Link
+                      activeClass="active"
+                      to={navlink.link}
+                      spy={true}
+                      smooth={true}
+                      offset={-100}
+                      duration={500}
+                      className="flex items-center h-full"
+                    >
                       {navlink.menu}
                     </Link>
                   </li>

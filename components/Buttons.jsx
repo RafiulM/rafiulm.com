@@ -12,7 +12,7 @@ export function ButtonRound({ children, link }) {
 export function ButtonRoundOutline({ children, link }) {
   return (
     <Link href={link}>
-      <button className="min-w-[140px] italic px-10 py-1  border-primary border text-primary font-normal rounded-3xl ">
+      <button className="min-w-[140px] italic px-10 py-1  border-primary dark:border-white border text-primary dark:text-white font-normal rounded-3xl ">
         {children}
       </button>
     </Link>

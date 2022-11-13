@@ -3,7 +3,7 @@ import Link from "next/link";
 export function ButtonRound({ children, link }) {
   return (
     <Link href={link}>
-      <button className="min-w-[140px] italic px-10 py-1 bg-primary text-white font-thin rounded-3xl ">
+      <button className="min-w-[140px] italic px-10 py-1 bg-primary text-white font-thin rounded-3xl hover:bg-orange-800  duration-300 ease-in-out">
         {children}
       </button>
     </Link>
@@ -12,7 +12,7 @@ export function ButtonRound({ children, link }) {
 export function ButtonRoundOutline({ children, link }) {
   return (
     <Link href={link}>
-      <button className="min-w-[140px] italic px-10 py-1  border-primary dark:border-white border text-primary dark:text-white font-normal rounded-3xl ">
+      <button className="min-w-[140px] italic px-10 py-1  border-primary border text-primary  font-normal rounded-3xl hover:bg-primary hover:text-white duration-300 ease-in-out">
         {children}
       </button>
     </Link>

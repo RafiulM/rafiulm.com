@@ -9,7 +9,7 @@ import Layout from "./Layout";
 
 function Hero() {
   return (
-    <Layout>
+    <Layout section="home">
       <div className="flex flex-col item-center justify-center mb-2 mx-auto">
         <h1 className="flex justify-center items-center text-center text-[72px] md:text-8xl leading-none font-display bg-primary dark:invert bg-hero-text bg-clip-text bg-center text-transparent  cursor-default">
           RAFIUL
@@ -34,7 +34,7 @@ function Hero() {
           <span className="font-bold">{"(IELTS Band 8.0)"}</span>
         </p>
         <div className="flex items-center justify-center gap-2">
-          <ButtonRound link="#projects">My Work</ButtonRound>
+          <ButtonRound link="projects">My Work</ButtonRound>
           <ButtonRoundOutline link="#resume">Resume</ButtonRoundOutline>
         </div>
         <div className="flex items-center justify-center gap-6 my-4 text-zinc-300 dark:text-white ">

@@ -24,7 +24,7 @@ function Projects() {
                       title={data.code}
                       target="_blank"
                       rel="noreferrer"
-                      className="text-white outline-white outline-3 outline hover:text-primary right-3 top-3 flex items-center rounded-md gap-2 py-2 px-3 text-xs absolute bg-black z-10 duration-300 ease-in-out"
+                      className="text-white outline-white outline-3 outline hover:text-primary hover:outline-primary right-3 top-3 flex items-center rounded-md gap-2 py-2 px-3 text-xs absolute bg-black z-10 duration-300 ease-in-out"
                     >
                       <AiFillGithub size={18} /> View Code
                     </a>
@@ -34,7 +34,7 @@ function Projects() {
                     width={800}
                     height={400}
                     objectFit="cover"
-                    className="brightness-90 hover:brightness-95 duration-500 ease-in-out"
+                    className="brightness-90 hover:scale-105 duration-500 ease-in-out"
                   ></Image>
                 </div>
                 <div className="flex justify-between gap-4 h-full flex-col px-3 py-2">
@@ -54,18 +54,18 @@ function Projects() {
                     <h3 className="text-lg font-bold leading-4 mt-6">
                       {data.name}
                     </h3>
-                    <p className="mt-2 text-sm">{data.description}</p>
+                    <p className="mt-4 text-sm">{data.description}</p>
                   </div>
                   <div className="flex gap-1 w-full mt-4">
                     {data.private_project ? (
-                      <ButtonPrivate link={data.primary_link}>
+                      <ButtonPrivate >
                         <div className="flex justify-center items-center gap-1">
                           <AiFillLock />
                           Private Project
                         </div>
                       </ButtonPrivate>
                     ) : (
-                      <ButtonSquare>{data.buttontext}</ButtonSquare>
+                      <ButtonSquare link={data.primary_link}>{data.buttontext}</ButtonSquare>
                     )}
                   </div>
                 </div>

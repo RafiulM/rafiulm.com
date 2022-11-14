@@ -1,6 +1,6 @@
 import { TbBrandHtml5,TbBrandCss3,TbBrandNextjs } from "react-icons/tb"
 import {FaReact, FaFigma, FaGitAlt,FaAws} from "react-icons/fa"
-import {SiStrapi, SiGnubash, SiPostgresql} from "react-icons/si"
+import {SiStyledcomponents,SiTailwindcss, SiStrapi, SiGnubash, SiPostgresql} from "react-icons/si"
 
 
 export const skillsData = [
@@ -35,41 +35,55 @@ export const skillsData = [
   },
   {
     "id": 5,
+    "logo": <SiStyledcomponents/>,
+    "alt": "Styled-components",
+    "name": "Styled-components",
+    "desc": "CSS-in-JS styling"
+  },
+  {
+    "id": 6,
+    "logo": <SiTailwindcss/>,
+    "alt": "Tailwind CSS",
+    "name": "Tailwind CSS",
+    "desc": "CSS Framework"
+  },
+  {
+    "id": 7,
     "logo": <FaFigma/>,
     "alt": "Figma",
     "name": "Figma",
     "desc": "UI and Graphic Design"
   },
   {
-    "id": 6,
+    "id": 8,
     "logo": <FaGitAlt/>,
     "alt": "Git",
     "name": "Git",
     "desc": "Version Control"
   },
   {
-    "id": 7,
+    "id": 9,
     "logo": <SiGnubash/>,
     "alt": "Bash",
     "name": "Bash",
     "desc": "Linux Shell"
   },
   {
-    "id": 8,
+    "id": 10,
     "logo": <SiStrapi/>,
     "alt": "Strapi",
     "name": "Strapi",
     "desc": "CMS with REST API"
   },
   {
-    "id": 9,
+    "id": 11,
     "logo": <SiPostgresql/>,
     "alt": "PostgreSQL",
     "name": "PostgreSQL",
     "desc": "Relational Database"
   },
   {
-    "id": 10,
+    "id": 12,
     "logo": <FaAws/>,
     "alt": "AWS",
     "name": "Amazon Web Services",

@@ -27,7 +27,7 @@ function Contact() {
               title="ahmadrafiulm@gmail.com"
               target="_blank"
               rel="noreferrer"
-              className="font-bold text-primary"
+              className="font-bold text-primary hover:underline underline-offset-4"
             >
               Email
             </a>{" "}
@@ -37,7 +37,7 @@ function Contact() {
               title="LinkedIn : rafiulm"
               target="_blank"
               rel="noreferrer"
-              className="font-bold text-primary"
+              className="font-bold text-primary hover:underline underline-offset-4"
             >
               LinkedIn
             </a>

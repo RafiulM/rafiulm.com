@@ -9,7 +9,7 @@ function Projects() {
   return (
     <Layout section="projects">
       <h2 className="font-bold text-2xl mb-4 ">MY WORK</h2>
-      <div className="grid grid-cols-1 md:grid-cols-3 h-full gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {Project.map((data) => {
           return (
             <div

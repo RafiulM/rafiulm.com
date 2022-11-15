@@ -9,12 +9,12 @@ function Projects() {
   return (
     <Layout section="projects">
       <h2 className="font-bold text-2xl mb-4 ">MY WORK</h2>
-      <div className="flex flex-col md:flex-row flex-wrap h-full gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 h-full gap-4">
         {Project.map((data) => {
           return (
             <div
               key={data.id}
-              className="flex flex-col h-auto w-full md:w-[32.4%] bg-white outline outline-2 outline-gray-200 dark:outline-zinc-900 dark:bg-black rounded-sm overflow-hidden"
+              className=" bg-white outline outline-2 outline-gray-200 dark:outline-zinc-900 dark:bg-black rounded-sm overflow-hidden"
             >
               <div className="flex flex-col h-full">
                 <div className="flex">

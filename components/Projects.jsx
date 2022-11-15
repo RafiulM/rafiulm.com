@@ -14,7 +14,7 @@ function Projects() {
           return (
             <div
               key={data.id}
-              className="flex flex-col h-full max-w-sm bg-white outline outline-2 outline-gray-200 dark:outline-zinc-900 dark:bg-black rounded-sm overflow-hidden"
+              className="flex flex-col h-auto w-full md:w-[32.4%] bg-white outline outline-2 outline-gray-200 dark:outline-zinc-900 dark:bg-black rounded-sm overflow-hidden"
             >
               <div className="flex flex-col h-full">
                 <div className="flex">

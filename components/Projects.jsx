@@ -17,25 +17,27 @@ function Projects() {
               className="flex flex-col bg-white outline outline-2 outline-gray-200 dark:outline-zinc-900 dark:bg-black rounded-sm overflow-hidden"
             >
               <div className="flex flex-col h-full">
-                <div className="relative">
-                  {data.code == "" ? null : (
-                    <a
-                      href={data.code}
-                      title={data.code}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="text-white outline-white outline-3 outline hover:text-primary hover:outline-primary right-3 top-3 flex items-center rounded-md gap-2 py-2 px-3 text-xs absolute bg-black z-10 duration-300 ease-in-out"
-                    >
-                      <AiFillGithub size={18} /> View Code
-                    </a>
-                  )}
-                  <Image
-                    src={data.image}
-                    width={800}
-                    height={400}
-                    objectFit="cover"
-                    className="brightness-90 hover:scale-105 duration-500 ease-in-out"
-                  ></Image>
+                <div className="flex">
+                  <div className="relative">
+                    {data.code == "" ? null : (
+                      <a
+                        href={data.code}
+                        title={data.code}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-white outline-white outline-3 outline hover:text-primary hover:outline-primary right-3 top-3 flex items-center rounded-md gap-2 py-2 px-3 text-xs absolute bg-black z-10 duration-300 ease-in-out"
+                      >
+                        <AiFillGithub size={18} /> View Code
+                      </a>
+                    )}
+                    <Image
+                      src={data.image}
+                      width={800}
+                      height={400}
+                      objectFit="cover"
+                      className="brightness-90 hover:scale-105 duration-500 ease-in-out"
+                    ></Image>
+                  </div>
                 </div>
                 <div className="flex justify-between gap-4 h-full flex-col px-3 py-2">
                   <div>
@@ -58,14 +60,16 @@ function Projects() {
                   </div>
                   <div className="flex gap-1 w-full mt-4">
                     {data.private_project ? (
-                      <ButtonPrivate >
+                      <ButtonPrivate>
                         <div className="flex justify-center items-center gap-1">
                           <AiFillLock />
                           Private Project
                         </div>
                       </ButtonPrivate>
                     ) : (
-                      <ButtonSquare link={data.primary_link}>{data.buttontext}</ButtonSquare>
+                      <ButtonSquare link={data.primary_link}>
+                        {data.buttontext}
+                      </ButtonSquare>
                     )}
                   </div>
                 </div>

@@ -6,12 +6,12 @@
     "company": "PT Ceria Nugraha Indotama",
     "title": "Web Developer and Designer",
     "jobdesc": [
+      "Design and implement changes to the company's website using React JS, styled-components, and Strapi (REST API)",
+      "Maintain stored data and the Virtual Private Server (VPS) hosted on Amazon Web Services (AWS)",
       "Project Manager for a Mining Equipment Simulator Project",
       "        Created the company's Brand Guideline",
       "Lead the graphic design team",
       "Responsible for the design of the company's presentation deck",
-      "Maintain and manage changes to the frontend of the company's website",
-      "Maintain stored data and Virtual Private Server (VPS) hosted on Amazon Web Services (AWS)",
       "UI/UX Designs and project documentation for IT systems"
     ]
   },

@@ -19,11 +19,11 @@ export function ButtonRound({ children, link }) {
 }
 export function ButtonRoundOutline({ children, link }) {
   return (
-    <Link href={link}>
+    <a href={link} target="_blank" rel="noreferrer">
       <button className="min-w-[140px] italic px-10 py-1  border-primary border text-primary  font-normal rounded-3xl hover:bg-primary hover:text-white duration-300 ease-in-out">
         {children}
       </button>
-    </Link>
+    </a>
   );
 }
 

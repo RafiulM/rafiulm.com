@@ -4,7 +4,7 @@ import {
   AiFillGithub,
   AiOutlineDribbble,
 } from "react-icons/ai";
-import {MdOutlineEmail} from "react-icons/md"
+import { MdOutlineEmail } from "react-icons/md";
 import Layout from "./Layout";
 
 function Hero() {
@@ -29,13 +29,15 @@ function Hero() {
           <span className="underline underline-offset-[1.8]">
             University of Indonesia
           </span>
-          . More than 2 years of work experience as a designer and developer.
-          Very high english profiency{" "}
-          <span className="font-bold">{"(IELTS Band 8.0)"}</span>
+          . More than 2 years of work experience as a designer and web
+          developer. Very high english profiency, scoring{" "}
+          <span className="font-bold">{"8.0 on IELTS."}</span>
         </p>
         <div className="flex items-center justify-center gap-2">
           <ButtonRound link="projects">My Work</ButtonRound>
-          <ButtonRoundOutline link="#resume">Resume</ButtonRoundOutline>
+          <ButtonRoundOutline link="/Resume_AhmadRafiulMahdi.pdf">
+            Resume
+          </ButtonRoundOutline>
         </div>
         <div className="flex items-center justify-center gap-6 my-4 text-zinc-300 dark:text-white ">
           <a

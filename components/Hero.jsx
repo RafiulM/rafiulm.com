@@ -30,7 +30,7 @@ function Hero() {
             University of Indonesia
           </span>
           . More than 2 years of work experience as a designer and web
-          developer. Very high english profiency, scoring{" "}
+          developer. Very high English proficiency, scoring{" "}
           <span className="font-bold">{"8.0 on IELTS."}</span>
         </p>
         <div className="flex items-center justify-center gap-2">

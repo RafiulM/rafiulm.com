@@ -30,7 +30,13 @@ function Navbar() {
               duration={500}
               className="cursor-pointer"
             >
-              <img src="/iul-logo.svg" className="rounded-3xl" />
+              <Image
+                src="/iul-logo.svg"
+                height={36}
+                width={36}
+                alt="iul logo"
+                className="rounded-3xl"
+              />
             </Link>
           </div>
           <div className="flex h-full items-center">
@@ -59,6 +65,7 @@ function Navbar() {
             <ThemeChanger />
             <button
               className="group flex justify-center items-center md:hidden ml-4"
+              aria-label="theme change"
               onClick={handleOpen}
             >
               {open ? (

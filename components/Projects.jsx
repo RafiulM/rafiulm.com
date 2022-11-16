@@ -32,6 +32,7 @@ function Projects() {
                     )}
                     <Image
                       src={data.image}
+                      alt={data.name}
                       width={800}
                       height={400}
                       objectFit="cover"

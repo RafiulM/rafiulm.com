@@ -11,7 +11,7 @@ function Hero() {
   return (
     <Layout section="home">
       <div className="flex flex-col item-center justify-center mb-2 mx-auto">
-        <h1 className="flex justify-center items-center text-center text-[72px] md:text-8xl leading-none font-display bg-primary dark:invert bg-hero-text bg-clip-text bg-center text-transparent  cursor-default">
+        <h1 className="flex justify-center items-center text-center text-[72px] md:text-8xl leading-none font-display dark:invert bg-hero-text bg-clip-text bg-center text-transparent  cursor-default">
           RAFIUL
         </h1>
         <ul className="flex items-center justify-center text-sm md:text-lg gap-3 list-inside list-disc">

@@ -18,15 +18,20 @@ export function ThemeChanger() {
     return (
       <button
         className="text-1xl px-2 py-2 rounded-full ml-4 dark:bg-white dark:text-black"
+        aria-label="light theme"
         onClick={() => setTheme("light")}
       >
-        <BsSunFill /> 
+        <BsSunFill />
       </button>
     );
   } else {
     return (
-      <button className="text-1xl px-2 py-2 rounded-full ml-4 text-white bg-black" onClick={() => setTheme("dark")}>
-       <BsFillMoonStarsFill />
+      <button
+        className="text-1xl px-2 py-2 rounded-full ml-4 text-white bg-black"
+        aria-label="dark theme"
+        onClick={() => setTheme("dark")}
+      >
+        <BsFillMoonStarsFill />
       </button>
     );
   }

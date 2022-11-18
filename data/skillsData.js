@@ -9,7 +9,7 @@ export const skillsData = [
     "logo": <TbBrandHtml5/>,
     "alt": "HTML5",
     "name": "HTML5",
-    "desc": "Web Markdown"
+    "desc": "Web Markup"
   }
   ,
   {

@@ -35,7 +35,7 @@ function Hero() {
         </p>
         <div className="flex items-center justify-center gap-2">
           <ButtonRound link="projects">My Work</ButtonRound>
-          <ButtonRoundOutline link="/Resume_AhmadRafiulMahdi.pdf">
+          <ButtonRoundOutline link="/Resume_AhmadRafiulMahdi_3.pdf">
             Resume
           </ButtonRoundOutline>
         </div>

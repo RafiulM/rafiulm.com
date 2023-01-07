@@ -65,7 +65,7 @@ function Navbar() {
             <ThemeChanger />
             <button
               className="group flex justify-center items-center md:hidden ml-4"
-              aria-label="theme change"
+              aria-label="navigation menu"
               onClick={handleOpen}
             >
               {open ? (

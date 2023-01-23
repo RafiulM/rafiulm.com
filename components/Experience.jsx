@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
-import ExperienceData from "../data/experience.json";
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
 function Experience() {

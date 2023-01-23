@@ -26,6 +26,9 @@ function Contact() {
       alert(error.message);
     }
   };
+
+  if (contactData.length > 0)
+
   return (
     <Layout>
       <div
@@ -33,6 +36,7 @@ function Contact() {
         className="flex flex-col flex-shrink overflow-hidden w-full items-center md:flex-row my-16 bg-zinc-100 shadow-xl dark:bg-zinc-900"
       >
         <div className="flex md:w-2/3 h-full">
+          {/* {console.log(contactData[0].url)} */}
           <Image
             src={contactData[0].url}
             width={600}

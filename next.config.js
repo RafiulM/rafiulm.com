@@ -2,7 +2,18 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'oqonwizeyheaqznxwxwm.supabase.co',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
 }
+
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
   enabled: process.env.ANALYZE === 'true',
 })

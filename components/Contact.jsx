@@ -1,7 +1,34 @@
 import Layout from "./Layout";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
+
 
 function Contact() {
+  const supabaseClient = useSupabaseClient();
+  const [contactData, setContactData] = useState([]);
+
+  useEffect(() => {
+    getContactData();
+  }, []);
+
+  const getContactData = async () => {
+    try {
+      const { data, error } = await supabaseClient
+        .from("assets")
+        .select("*")
+        .eq("id", "7");
+      if (data != null) {
+        setContactData(data);
+      }
+      if (error) throw error;
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
+  if (contactData.length > 0)
+
   return (
     <Layout>
       <div
@@ -9,8 +36,9 @@ function Contact() {
         className="flex flex-col flex-shrink overflow-hidden w-full items-center md:flex-row my-16 bg-zinc-100 shadow-xl dark:bg-zinc-900"
       >
         <div className="flex md:w-2/3 h-full">
+          {/* {console.log(contactData[0].url)} */}
           <Image
-            src="/rafiul.webp"
+            src={contactData[0].url}
             width={600}
             height={400}
             objectFit="cover"

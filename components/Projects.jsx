@@ -1,16 +1,38 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Layout from "./Layout";
-import Project from "../data/projects.json";
 import Image from "next/image";
 import { ButtonPrivate, ButtonSquare } from "./Buttons";
 import { AiFillLock, AiFillGithub } from "react-icons/ai";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
 
 function Projects() {
+  const supabaseClient = useSupabaseClient();
+  const [projectsData, setProjectsData] = useState([]);
+
+  useEffect(() => {
+    getProjectsData();
+  }, []);
+
+  async function getProjectsData() {
+    try {
+      const { data, error } = await supabaseClient
+        .from("projects")
+        .select('*, assets(*)')
+        .order("id", { ascending: false });
+      if (data != null) {
+        setProjectsData(data);
+      }
+      if (error) throw error;
+    } catch (error) {
+      alert(error.message);
+    }
+  }
+
   return (
     <Layout section="projects">
       <h2 className="font-bold text-2xl mb-4 ">MY WORK</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-        {Project.map((data) => {
+        {projectsData.map((data, idx) => {
           return (
             <div
               key={data.id}
@@ -19,20 +41,20 @@ function Projects() {
               <div className="flex flex-col h-full">
                 <div className="flex">
                   <div className="relative">
-                    {data.code == "" ? null : (
+                    {data.code == "" || data.code == null ? null : (
                       <a
                         href={data.code}
                         title={data.code}
                         target="_blank"
                         rel="noreferrer"
-                        className="text-white outline-white outline-3 outline hover:text-primary hover:outline-primary right-3 top-3 flex items-center rounded-md gap-2 py-2 px-3 text-xs absolute bg-black z-10 duration-300 ease-in-out"
+                        className="text-white outline-white outline-3 outline hover:text-primary hover:outline-primary right-3 top-3 flex items-center rounded-md gap-2 py-2 px-3 text-xs absolute bg-black z-10 duration-300 ease-in-out cursor-pointer"
                       >
                         <AiFillGithub size={18} /> View Code
                       </a>
                     )}
                     <Image
-                      src={data.image}
-                      alt={data.name}
+                      src={data.assets.url}
+                      alt={data.assets.alt}
                       width={800}
                       height={400}
                       objectFit="cover"
@@ -60,7 +82,7 @@ function Projects() {
                     <p className="mt-4 text-sm">{data.description}</p>
                   </div>
                   <div className="flex gap-1 w-full mt-4">
-                    {data.private_project ? (
+                    {data.private ? (
                       <ButtonPrivate>
                         <div className="flex justify-center items-center gap-1">
                           <AiFillLock />
@@ -69,7 +91,7 @@ function Projects() {
                       </ButtonPrivate>
                     ) : (
                       <ButtonSquare link={data.primary_link}>
-                        {data.buttontext}
+                        {data.button_text}
                       </ButtonSquare>
                     )}
                   </div>

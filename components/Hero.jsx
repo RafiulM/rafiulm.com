@@ -6,8 +6,32 @@ import {
 } from "react-icons/ai";
 import { MdOutlineEmail } from "react-icons/md";
 import Layout from "./Layout";
+import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import { useEffect, useState } from "react";
 
 function Hero() {
+  const supabaseClient = useSupabaseClient();
+  const [heroData, setHeroData] = useState([]);
+
+  useEffect(() => {
+    getHeroData();
+  }, []);
+
+  const getHeroData = async () => {
+    try {
+      const { data, error } = await supabaseClient
+        .from("assets")
+        .select("*")
+        .eq('id', '4')
+      if (data != null) {
+        setHeroData(data[0].url);
+      }
+      if (error) throw error;
+    } catch (error) {
+      alert(error.message);
+    }
+  };
+
   return (
     <Layout section="home">
       <div className="flex flex-col item-center justify-center mb-2 mx-auto">
@@ -35,7 +59,7 @@ function Hero() {
         </p>
         <div className="flex items-center justify-center gap-2">
           <ButtonRound link="projects">My Work</ButtonRound>
-          <ButtonRoundOutline link="/Resume_AhmadRafiulMahdi_3.pdf">
+          <ButtonRoundOutline link={heroData}>
             Resume
           </ButtonRoundOutline>
         </div>

@@ -1,0 +1,50 @@
+[
+  {
+    "title": "(Optional) Add Unit Test for Defensive Rendering Logic",
+    "description": "Add a unit test to the Experience component to ensure it handles null, undefined, and array values for job_desc without crashing.",
+    "details": "Using Jest and React Testing Library, write a test that renders the Experience component with different job_desc values (array, empty array, null, undefined). Assert that the component does not throw errors and renders the correct output in each case.",
+    "status": "pending",
+    "test_strategy": "Run the new unit test and ensure all cases pass. Intentionally break the logic to confirm the test fails as expected, then restore the fix.",
+    "priority": "low",
+    "ordinal": 2,
+    "task_group_id": "11245a39-3d57-45da-8c03-c6f2c52eb3f3",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "7b05a32d-6a39-4ba1-bdc6-ee430de41d0c",
+    "created_at": "2025-10-05T06:34:12.476748Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  },
+  {
+    "title": "Add Defensive Null Check for job_desc in Experience.jsx",
+    "description": "Update the Experience.jsx component to prevent calling .map() on a null or undefined job_desc property, ensuring the component does not crash when job_desc is missing.",
+    "details": "Open components/Experience.jsx. Locate the code where experience.job_desc is mapped over. Change the mapping logic to use a default empty array if job_desc is null or undefined, e.g., (experience.job_desc || []).map(...) or experience.job_desc?.map(...). This ensures the component renders gracefully even if job_desc is missing.",
+    "status": "pending",
+    "test_strategy": "Manually test the Experience section by providing job_desc as a valid array, an empty array, null, and undefined. Confirm that the component renders correctly and does not crash in any case. Optionally, add a unit test using Jest and React Testing Library to automate these checks.",
+    "priority": "high",
+    "ordinal": 0,
+    "task_group_id": "11245a39-3d57-45da-8c03-c6f2c52eb3f3",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "f17fc5d5-aa34-453b-86f7-04f5271a4f32",
+    "created_at": "2025-10-05T06:34:12.476738Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  },
+  {
+    "title": "Verify Visual and Functional Integrity of Experience Section",
+    "description": "Ensure that the Experience section displays correctly after the fix, with no visual regressions or missing content when job_desc is present, empty, or missing.",
+    "details": "After implementing the null check, review the Experience section in the browser. Confirm that job descriptions render as expected when present, and that the section remains visually consistent when job_desc is empty or missing. Check for any unintended side effects or UI glitches.",
+    "status": "pending",
+    "test_strategy": "Perform manual regression testing on the Experience section with various job_desc values. Compare with previous screenshots or expected output to ensure no regressions.",
+    "priority": "medium",
+    "ordinal": 1,
+    "task_group_id": "11245a39-3d57-45da-8c03-c6f2c52eb3f3",
+    "parent_task_id": null,
+    "ai_result": null,
+    "id": "e036056c-3b64-4865-a98d-5c7df1167e63",
+    "created_at": "2025-10-05T06:34:12.476745Z",
+    "user_id": "user_2yhesfpa5IDelC7UxShblIKQJIb",
+    "subtasks": []
+  }
+]

@@ -50,7 +50,7 @@ function Experience() {
               </span>
 
               <ul className="mt-1 text-xs list-disc list-outside ml-4">
-                {data.job_desc.map((jobdesc, index) => {
+                {(data.job_desc || []).map((jobdesc, index) => {
                   return <li key={index}>{jobdesc}</li>;
                 })}
               </ul>
